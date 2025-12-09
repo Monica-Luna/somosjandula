@@ -47,6 +47,8 @@ import LatestNewsPage from '@/views/notifications/LatestNewsPage.vue';
 import ManageNotificationsPage from '@/views/notifications/ManageNotificationsPage.vue';
 import NotificationsAdminPage from '@/views/notifications/NotificationsAdminPage.vue';
 
+import EventsSchoolAdminPage from '@/views/events/EventsSchoolAdminPage.vue';
+
 const routes = [  
   {
     path: '/',
@@ -302,6 +304,14 @@ const routes = [
         name: 'C_HorarioGrupos',
         meta: {
           role: 'PROFESOR'
+        },
+      },
+      {
+        path: 'eventsSchool/admin',
+        component: EventsSchoolAdminPage,
+        name: 'EventsSchoolAdmin',
+        meta: {
+          role: 'ADMINISTRADOR'
         },
       },
     ],
